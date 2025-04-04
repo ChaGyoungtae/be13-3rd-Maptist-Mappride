@@ -43,7 +43,8 @@ let markerMap = [];
 // 네이버 지도 API 로드 및 지도 생성
 onMounted(() => {
   const script = document.createElement("script");
-  script.src = "https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=p5ju3wcg2n";
+  // NAVER CLOUD PLATFORM 네이버 클라우드 플랫폼 에서 네이버 지도 api key 발급 받아서 {본인의 id} 에 넣으면 구동 됩니다.
+  script.src = "https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId={본인의 id}";
   script.async = true;
   script.defer = true;
   document.head.appendChild(script);
